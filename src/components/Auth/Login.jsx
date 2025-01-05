@@ -18,13 +18,12 @@ const Login = ({handleLogin}) => {
 
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
-        <div className='border-2 rounded-xl relative border-emerald-600 px-20 py-24 '>
-            <h1 className='absolute top-10 left-[40%] font-semibold text-4xl'>Login</h1>
+        <div className='border-2 rounded-xl border-emerald-600 p-20'>
             <form 
             onSubmit={(e)=>{
                 submitHandler(e)
             }}
-            className='flex flex-col items-center justify-center mt-14'
+            className='flex flex-col items-center justify-center'
             >
                 <input 
                 value={email}
